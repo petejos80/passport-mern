@@ -9,7 +9,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird')})
   .then(() =>  console.log('Connection successful!'))
   .catch((err) => console.error(err));
 
